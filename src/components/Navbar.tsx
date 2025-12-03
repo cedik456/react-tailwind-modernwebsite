@@ -16,7 +16,7 @@ export default function Navbar() {
               className="w-6 h-6 sm:w-8 sm:h-8"
             />
             <span className="text-lg sm:text-xl md:text-2xl font-medium">
-              Who's Next?
+              CodeFlow AI
             </span>
           </div>
 
