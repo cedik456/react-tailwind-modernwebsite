@@ -6,7 +6,33 @@
   }
 
   .slide-in-from-top {
-    animation: slideInFromTop 300ms ease-out forwards;
+    animation-name: slideInFromTop;
+    animation-duration: 300ms; /* must define duration */
+    animation-timing-function: ease-out; /* optional if you want custom ease */
+    animation-fill-mode: forwards; /* stay at the final state */
+  }
+
+  .slide-in-from-bottom {
+    animation-name: slideInFromBottom;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+  }
+
+  .slide-in-from-bottom-h1 {
+    animation-name: slideInFromBottom;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 100ms;
+  }
+
+  .slide-in-from-bottom-pill {
+    animation-name: slideInFromBottom;
+    animation-duration: 700ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 200ms;
   }
 }
 
@@ -14,6 +40,17 @@
   from {
     opacity: 0;
     transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(1rem);
   }
   to {
     opacity: 1;
